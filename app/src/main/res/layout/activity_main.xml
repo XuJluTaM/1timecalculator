@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#006400"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <EditText
+        android:id="@+id/inputTime1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time 1 (hh:mm:ss)"
+        android:inputType="text"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/inputTime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime1"
+        android:hint="Enter time 2 (hh:mm:ss)"
+        android:inputType="text"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime2"
+        android:text="Add Times"
+        android:backgroundTint="#008000"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/subtractBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtn"
+        android:text="Subtract Times"
+        android:backgroundTint="#008000"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtractBtn"
+        android:text="Result will be shown here"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
